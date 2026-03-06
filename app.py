@@ -3,7 +3,6 @@ import joblib
 
 model = joblib.load("foodexp.pkl")
 
-
 app = Flask(__name__)
 
 @app.route("/",methods=["get","post"])
