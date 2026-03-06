@@ -33,7 +33,7 @@ def econ():
 @app.route("/foodExp",methods=["get","post"])
 def foodExp():
     q = float(request.form.get("q"))
-    r = model.preict([[q]])
+    r = model.predict([[q]])
     return(render_template("foodExp.html",r=r[0]))
 
 if __name__ == "__main__":
